@@ -2,20 +2,20 @@
 html {
     font-size: $base-font-size + px;
 }
+
 :root {
     scroll-behavior: unset;
 }
+
 body {
     font-family: $body-font;
     background-color: $body-bg-color;
     font-size: 15px;
     overflow-x: hidden;
- 
 }
 
 p {
     font-size: 16px;
-    color: $body-color;
     line-height: 1.8em;
 }
 
@@ -44,7 +44,7 @@ a:hover {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -69,12 +69,11 @@ img{
 .section_space {
     padding: 100px 0;
 
-    @media (max-width:991px ) {
+    @media (max-width:991px) {
         padding: 90px 0;
     }
-    @media (max-width: 767px ) {
+
+    @media (max-width: 767px) {
         padding: 80px 0;
     }
 }
-
-
