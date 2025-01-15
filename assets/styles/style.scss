@@ -1,0 +1,61 @@
+/*
+    @version         : 1.0.0
+    @Template Name   : metier - Hotel Booking Html Template
+    @Template author : Template
+*/
+
+/*--------------------------------------------------------------
+css table of contents
+----------------------------------------------------------------
+
+1. General
+	1.1 Theme Reset Style
+	1.2 Global Elements
+
+2. header
+	2.1 header_top
+	2.2 header_section
+
+3. sections
+	3.1 metier_hero_section
+	3.2 infoemation_section
+	3.3 metier_room_section
+	3.4 metier_about_section
+	3.5 metier_services_section
+	3.6 metier_cta_section
+	3.7 metier_testimonial_section
+	3.8 metier_video_section
+	3.9 metier_blog_section
+
+
+
+----------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+1. General
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+
+// base
+@import "base/basic";
+
+
+// components
+@import "components/top-title";
+@import "components/buttons";
+@import "components/page-title";
+
+// layout
+@import "layout/header";
+@import "layout/hero";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-main";

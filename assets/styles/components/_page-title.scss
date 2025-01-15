@@ -1,0 +1,97 @@
+/* metier_breadcrumb_section */
+.metier_breadcrumb_section {
+    background: url(../images/breadcrumb_bg.jpg) center / cover no-repeat;
+    position: relative;
+    z-index: 1;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+    @media (max-width:1199px) {
+        padding-top: 150px;
+    }
+
+    @media (max-width:575px) {
+        padding-top: 200px;
+    }
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        opacity: 0.3;
+        background: #000;
+        z-index: -1;
+    }
+
+    .content {
+        text-align: center;
+
+        h2 {
+            color: $white;
+            font-size: 60px;
+            font-weight: 400;
+            margin-bottom: 0;
+            @media (max-width:767px) {
+                font-size: 35px;
+            }
+        }
+
+        ul {
+            li {
+                color: #FFF;
+                font-size: 25px;
+                font-weight: 400;
+                display: inline-block;
+                padding-right: 15px;
+                position: relative;
+                @media (max-width:767px) {
+                    font-size: 18px;
+                }
+                &::before {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    content: '/';
+                    color: $white;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                a {
+                    color: #FFF;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    &.s2{
+        height: 600px;
+    padding-top: 50px;
+
+    @media (max-width:1199px) {
+        padding-top: 150px;
+        height: 500px;
+    }
+
+    @media (max-width:575px) {
+        padding-top: 200px;
+    } 
+    }
+}
