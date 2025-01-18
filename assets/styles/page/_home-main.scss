@@ -1,5 +1,8 @@
 /* metier-blog-section */
-.metier-blog-section {}
+.metier-blog-section {
+    background: #181818;
+
+}
 
 .blog-card {
     position: relative;
@@ -7,14 +10,88 @@
     margin-bottom: 30px;
 
     .image {
+        display: block;
+        overflow: hidden;
+
         img {
             width: 100%;
+            transition: all 0.3s ease-in-out;
+            transform: scale(1);
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
         }
     }
 
     .content {
         padding: 32px 24px;
+        position: relative;
 
+        .dates {
+            background: $template-color;
+            display: inline-block;
+            padding: 12px 16px;
+            position: absolute;
+            top: -55px;
+            right: 44px;
+
+            .date {
+                color: #181818;
+                font-family: $heading-font;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 123.5%;
+            }
+
+            .month {
+                color: #181818;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 123.5%;
+                letter-spacing: 2.88px;
+                text-transform: uppercase;
+            }
+        }
+
+        .writer {
+            color: #EAEAEA;
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 123.5%;
+            margin-bottom: 15px;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        .title {
+            margin-bottom: 0;
+
+            a {
+                color: $white;
+                font-family: $heading-color;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 133%;
+                display: inline-block;
+                margin-bottom: 0;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $template-color;
+                }
+            }
+        }
     }
 }
 
@@ -22,6 +99,10 @@
 /*  WHY CHOOSE US SECTION START */
 section.why-choose-section {
     background: #282828;
+
+    .subtmit-button {
+        margin-top: 30px;
+    }
 
 }
 
