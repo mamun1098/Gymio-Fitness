@@ -1,3 +1,127 @@
+/* ABOUT US SECTION START */
+.about-us-section {
+    background: #282828;
+
+    .about-image-wrap {
+        position: relative;
+
+        .img {
+            max-width: 505px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .video-button {
+            position: absolute;
+            bottom: 79px;
+            right: 35px;
+            border-radius: 16px;
+            background: rgba(24, 24, 24, 0.38);
+            backdrop-filter: blur(10px);
+            display: inline-block;
+            width: 248px;
+            height: 269px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 135px;
+            }
+        }
+    }
+
+    .about-us-list {
+        max-width: 68%;
+
+        li {
+            display: inline-flex;
+            align-items: center;
+            column-gap: 14px;
+            color: #EAEAEA;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 160%;
+            padding: 4px 12px;
+            margin-bottom: 4px;
+            background: #181818;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .button {
+        margin-top: 40px;
+    }
+}
+
+/* ABOUT US SECTION END */
+
+/* TESTIMONI SECTION START */
+.testimonial-section {
+    background: #282828;
+
+    .testimoni-image-wrap {
+        position: relative;
+
+        .img {
+            max-width: 525px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .small-image {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+
+            img {
+                max-width: 315px;
+            }
+        }
+    }
+
+    .testimonial-text {
+        margin-top: 60px;
+
+        .icon {
+            margin-bottom: 28px;
+            display: inline-block;
+        }
+
+        p {
+            color: $white;
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 147%;
+            margin-bottom: 28px;
+        }
+
+        .writer {
+            color: $white;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 147%;
+        }
+    }
+}
+
+/* TESTIMONI SECTION END */
+
+
 /* metier-blog-section */
 .metier-blog-section {
     background: #181818;
