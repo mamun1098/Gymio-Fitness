@@ -60,4 +60,26 @@ button.button {
     }
   }
 
+  &.dark {
+    background: #464646;
+    color: $white;
+
+    &::before {
+      background-color: #7F7F7F;
+      background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"%3E%3Cpath d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z" fill="%23ffffff"/%3E%3C/svg%3E');
+    }
+
+    &:hover {
+      background-color: $template-color;
+      color: $small-dark;
+
+      &::before {
+        background-color: $white;
+        background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"%3E%3Cpath d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z" fill="%23181818"/%3E%3C/svg%3E');
+        transform: rotate(45deg);
+      }
+
+    }
+  }
+
 }

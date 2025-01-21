@@ -64,6 +64,167 @@
 
 /* ABOUT US SECTION END */
 
+/* PROGRAMS SECTION  START */
+.programs-section {
+    background: $section-color;
+
+    .wraper {
+        max-width: 1620px;
+        margin-left: auto;
+        display: flex;
+    }
+
+    .section-title {
+        max-width: 424px;
+        padding-top: 30px;
+    }
+
+}
+
+.programs-slider {
+    width: calc(100% - 424px);
+    padding-left: 137px;
+
+    .owl-nav button.owl-prev,
+    .owl-nav button.owl-next {
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        border-radius: 54px;
+        background: #FFF;
+        box-shadow: 6px 6px 24px 0px rgba(0, 0, 0, 0.25);
+        color: #181818;
+        font-size: 20px;
+        border: 0;
+        right: 100px;
+    }
+
+    .owl-nav button.owl-prev {
+        display: none;
+    }
+}
+
+.programs-card {
+
+
+    .image {
+        img {
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    .content {
+        h2 {
+            a {
+                color: #FFF;
+                font-family: $heading-font;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        ul {
+            li {
+
+                border-radius: 4px;
+                background: #252525;
+                padding: 8px 12px;
+                margin-bottom: 4px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                }
+
+                span {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+
+                .lin {
+                    color: #EAEAEA;
+                    font-size: 14px;
+                    font-weight: 600;
+                    display: inline-block;
+                    padding: 0px 16px;
+                    line-height: 23px;
+                    border-radius: 31px;
+                    background: #181818;
+                }
+
+                p {
+                    color: #EAEAEA;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
+
+/* PROGRAMS SECTION  END */
+
+/* SERVICES SECTION START */
+.services-section {
+    background: $section-color;
+
+    .service-card {
+
+        .top-content {
+            display: flex;
+            align-items: center;
+
+            .num {
+                span {
+                    color: rgba(234, 234, 234, 0.15);
+                    font-family: $heading-font;
+                    font-size: 67px;
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+
+            h2 {
+                margin-left: 25px;
+                max-width: 170px;
+                margin-bottom: 0;
+
+                a {
+                    color: #FFF;
+                    font-family: $heading-font;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        p {
+            color: #EAEAEA;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            margin-bottom: 0;
+            max-width: 285px;
+        }
+    }
+}
+
+/* SERVICES SECTION END */
+
 /* TESTIMONI SECTION START */
 .testimonial-section {
     background: #282828;
@@ -261,3 +422,162 @@ section.why-choose-section {
 }
 
 /*  WHY CHOOSE US SECTION END */
+
+/* PRICING SECTION START */
+.pricing-section {
+    background: #181818;
+
+    .switch {
+        color: #EAEAEA;
+        font-family: $body-font;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+    }
+
+    input[type=checkbox] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+        display: none;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 44px;
+        height: 23px;
+        background: $template-color;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+    }
+
+    label:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        width: 17px;
+        height: 17px;
+        background: #fff;
+        border-radius: 100px;
+        transition: 0.3s;
+    }
+
+    input:checked+label {
+        background: $dark-bg;
+    }
+
+    input:checked+label:after {
+        left: calc(100% - 4px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 17px;
+    }
+
+    .single-pricing-card {
+        border-radius: 8px;
+        padding: 40px;
+
+        &.basic-plan {
+            background: #282828;
+            backdrop-filter: blur(17.5px);
+        }
+
+        &.premium-plan {
+            background: #383838;
+            backdrop-filter: blur(20px);
+
+            .plan {
+                color: rgba(248, 193, 0, 0.80);
+            }
+        }
+
+        .plan {
+            color: rgba(255, 255, 255, 0.80);
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 100%;
+            display: inline-flex;
+            padding: 8px 24px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 21px;
+            background: #313131;
+        }
+
+        .content {
+            padding-top: 48px;
+            border-top: 1px solid rgba(255, 255, 255, 0.10);
+            margin-top: 30px;
+
+            .price {
+                color: $white;
+                font-family: $heading-color;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 102%;
+                margin-bottom: 0;
+
+                .times {
+                    color: rgba(255, 255, 255, 0.60);
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 160%;
+                    margin-left: -7px;
+                }
+            }
+
+            .price-info {
+                margin-top: 40px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 15px;
+                    margin-bottom: 10px;
+
+                    p {
+                        color: $white;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 160%;
+                        margin-bottom: 0;
+                    }
+
+                    &.cross {
+                        opacity: 0.5;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .price-bttn {
+                margin-top: 40px;
+
+                button.button {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* PRICING SECTION END */
